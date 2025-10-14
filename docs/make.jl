@@ -34,4 +34,4 @@ makedocs(;
     warnonly=true,
 )
 
-# deploydocs(; repo="github.com/xiaomingfu2013/DelaySSAToolkit.jl", devbranch="main")
+deploydocs(; repo="https://github.com/X-Y-Zhou/test_documents", devbranch="main")
