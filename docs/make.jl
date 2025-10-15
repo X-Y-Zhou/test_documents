@@ -1,7 +1,7 @@
 using Documenter
 
 # DocMeta.setdocmeta!(
-#     DelaySSAToolkit, :DocTestSetup, :(using DelaySSAToolkit); recursive=true
+#     test_documents, :DocTestSetup, :(); recursive=true
 # )
 
 makedocs(;
