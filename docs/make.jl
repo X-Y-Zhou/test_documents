@@ -19,4 +19,4 @@ makedocs(;
     warnonly=true,
 )
 
-deploydocs(; repo="https://github.com/X-Y-Zhou/test_documents", devbranch="main")
+deploydocs(; repo="https://github.com/X-Y-Zhou/test_documents.git", devbranch="main")
