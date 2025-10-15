@@ -1,0 +1,22 @@
+首先创建仓库,仓库名称为 Test_documents
+
+打开仓库 → Settings → Actions → General → Workflow permissions
+勾选 Read and write permissions（默认是 Read-only，会导致 403）。
+需要将仓库设置为public 具体流程是 Settings -> Gneneral -> (拉到最下面) Change visibility
+
+在仓库里创建文件夹 docs/src    里面放网站的内容，在例子中只放了index.md，随便填写内容即可
+                docs/make.jl 需要填写的内容在文件中
+                docs/Project.toml 需要填写的内容在文件中
+
+创建文件夹 .github/workflows/Documentation.yml 其中 Documentation.yml 需要填写的内容在文件中
+
+将这些内容push到github上面以后，github会在Action目录下自动运行 Documentation.yml
+
+运行完成后 Documenter 会将静态站点推送到 gh-pages 分支，打开仓库 Settings → Pages，将 Source 设为 Deploy from a branch，分支选择 gh-pages，目录选择 /(root) 然后保存
+这时github会再次编译，编译完成之后 即可访问 https://<USER>.github.io/<REPO>/dev 在这个例子里就是 https://X-Y-Zhou.github.io/test_documents/dev/ 
+
+最后在readme.md里面写一个跳转 https://X-Y-Zhou.github.io/test_documents/dev/ 的链接即可，具体代码在 README.md 中
+
+
+
+
