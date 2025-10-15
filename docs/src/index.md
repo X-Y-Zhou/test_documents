@@ -9,6 +9,7 @@ A major assumption behind the majority of stochastic models of biochemical kinet
 DelaySSAToolkit.jl is a tool developed on top of [JumpProcesses.jl](https://github.com/SciML/JumpProcesses.jl) which solves the stochastic simulation with delay and contains the following features:
 
 ## Features
+## Features
 
   - Various exact delay stochastic simulation algorithms are integrated;
   - Stochastic delay type is supported;
